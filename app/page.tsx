@@ -26,11 +26,11 @@ export default async function Home() {
     <>
       <div className="z-10 h-screen w-full max-w-7xl px-5 xl:px-0">
         <h1
-          className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-6xl md:leading-[5rem]"
+          className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-5xl md:leading-[4rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           Welcome!
-          <br /> My name is Mahmoud Sherzad.
+          <br /> My name is Mahmoud Mirani.
         </h1>
         <div
           className="mx-auto mt-6 flex animate-fade-up flex-wrap space-x-5 font-bold leading-loose opacity-0"
