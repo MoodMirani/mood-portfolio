@@ -1,6 +1,3 @@
-import { ReactNode } from "react";
-import ReactMarkdown from "react-markdown";
-
 export default function Card({
   imagePath,
   title,
