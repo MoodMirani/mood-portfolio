@@ -24,7 +24,7 @@ export default function NavBar() {
 
           <div className="flex gap-4">
             <a
-              className="transition-opacity duration-200 hover:opacity-50"
+              className="opacity-80 transition-opacity duration-200 hover:opacity-50"
               href="https://github.com/MoodMirani"
               target="_blank"
               rel="noopener noreferrer"
@@ -32,7 +32,7 @@ export default function NavBar() {
               <Github />
             </a>
             <a
-              className="transition-opacity duration-200 hover:opacity-50"
+              className="opacity-80 transition-opacity duration-200 hover:opacity-50"
               href="https://www.linkedin.com/in/mahmoud-mirani/"
               target="_blank"
               rel="noopener noreferrer"
@@ -47,8 +47,8 @@ export default function NavBar() {
               </svg>
             </a>
             <a
-              className="transition-opacity duration-200 hover:opacity-50"
-              href="https://drive.google.com/file/d/1rI207eqRLWHMSouxEgesbi90ql9xXwI3/view?usp=sharing"
+              className="opacity-80 transition-opacity duration-200 hover:opacity-50"
+              href="https://drive.google.com/file/d/1lO7_fRVGctOavcbI_3ohLZmqRJN_wnpZ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

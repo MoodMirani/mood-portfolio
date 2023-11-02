@@ -17,7 +17,7 @@ const ScrollTo = ({ children, ...props }: ScrollLinkProps) => {
     const targetId = e.currentTarget.href.replace(/.*\#/, "");
     const elem = document.getElementById(targetId);
     window.scrollTo({
-      top: elem?.getBoundingClientRect().top,
+      top: elem?.getBoundingClientRect().bottom,
       behavior: "smooth",
     });
   };
