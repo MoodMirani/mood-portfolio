@@ -3,10 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import useScroll from "@/lib/hooks/use-scroll";
-import { Session } from "next-auth";
 import { Github } from "../shared/icons";
 
-export default function NavBar({ session }: { session: Session | null }) {
+export default function NavBar() {
   const scrolled = useScroll(50);
 
   return (
