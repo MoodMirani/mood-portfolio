@@ -19,19 +19,13 @@ export default function NavBar({ session }: { session: Session | null }) {
         } z-30 transition-all`}
       >
         <div className="mx-5 flex h-16 w-full max-w-screen-xl items-center justify-between">
-          <Link href="/" className="flex items-center font-display text-2xl">
-            <Image
-              src="/logo.png"
-              alt="Precedent logo"
-              width="30"
-              height="30"
-              className="mr-2 rounded-sm"
-            ></Image>
-            <p>Mahmouds Signatur</p>
+          <Link href="/" className="flex items-center font-display text-xl">
+            <p className="font-bold opacity-75">Mahmoud Mirani</p>
           </Link>
 
           <div className="flex gap-4">
             <a
+              className="transition-opacity duration-200 hover:opacity-50"
               href="https://github.com/MoodMirani"
               target="_blank"
               rel="noopener noreferrer"
@@ -39,6 +33,7 @@ export default function NavBar({ session }: { session: Session | null }) {
               <Github />
             </a>
             <a
+              className="transition-opacity duration-200 hover:opacity-50"
               href="https://www.linkedin.com/in/mahmoud-mirani/"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,7 +48,8 @@ export default function NavBar({ session }: { session: Session | null }) {
               </svg>
             </a>
             <a
-              href="https://drive.google.com/file/d/1n8hlxmaGDyEjfu8wBl5xIWSQkN2Es9QC/view?usp=drive_link"
+              className="transition-opacity duration-200 hover:opacity-50"
+              href="https://drive.google.com/file/d/1rI207eqRLWHMSouxEgesbi90ql9xXwI3/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
