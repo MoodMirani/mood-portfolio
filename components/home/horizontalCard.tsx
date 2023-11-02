@@ -21,8 +21,11 @@ export default function HorizontalCard({
           <p className="text-base text-gray-700">{description}</p>
         </div>
         <div className="flex px-6 pb-2 pt-4">
-          {tags.map((tag) => (
-            <span className="mb-2 mr-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
+          {tags.map((tag, index) => (
+            <span
+              key={index}
+              className="mb-2 mr-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
+            >
               {tag}
             </span>
           ))}

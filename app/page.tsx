@@ -24,6 +24,7 @@ export default function Home() {
         {features.map(({ imagePath, title, description, tags, portrait }) =>
           portrait ? (
             <Card
+              key={title}
               imagePath={imagePath}
               title={title}
               description={description}
@@ -31,6 +32,7 @@ export default function Home() {
             />
           ) : (
             <HorizontalCard
+              key={title}
               imagePath={imagePath}
               title={title}
               description={description}
