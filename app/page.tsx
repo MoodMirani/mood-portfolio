@@ -27,7 +27,7 @@ export default function Home() {
           My burning passion lies in the creation of innovative digital
           applications, coupled with a deep commitment to cultivating a
           collaborative work environment. While studying for a “Master of
-          Science in Engineering” degree, I've had the privilege of immersing
+          Science in Engineering” degree, Ive had the privilege of immersing
           myself in the world of programming and product development. Scroll
           down to find some of my previous work.
         </p>
