@@ -22,10 +22,11 @@ export default function Home() {
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           This portfolio is a showcase of my programming journey, feel free to
-          explore my work whether you're here for inspiration, collaboration, or
-          just to share in the wonder of technology. Thank you for visiting, and
-          feel free to get in touch if you'd like to connect or collaborate. You
-          can find my contact information in my&nbsp;
+          explore my work whether you&apos;re here for inspiration,
+          collaboration, or just to share in the wonder of technology. Thank you
+          for visiting, and feel free to get in touch if you&apos;d like to
+          connect or collaborate. You can find my contact information in
+          my&nbsp;
           <a
             className="font-bold text-blue-500 hover:underline"
             href="/documents/Mahmoud_Sherzad_Resume_IT.pdf"
