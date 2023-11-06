@@ -7,7 +7,7 @@ import ParticlesBG from "@/components/particles/particles";
 export default function Home() {
   return (
     <>
-      <div className="z-10 h-screen w-full max-w-7xl px-5 xl:px-0">
+      <div className="z-10 h-screen w-full max-w-7xl select-none px-5 xl:px-0">
         <ParticlesBG />
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-4xl md:leading-[3rem]"

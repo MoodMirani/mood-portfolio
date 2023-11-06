@@ -299,7 +299,7 @@ export default function ParticlesBG() {
             animation: {
               count: 0,
               enable: true,
-              speed: 3,
+              speed: 0.3,
               decay: 0,
               delay: 0,
               sync: false,
