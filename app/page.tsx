@@ -1,17 +1,14 @@
 import Card from "@/components/home/card";
 import HorizontalCard from "@/components/home/horizontalCard";
 import ScrollTo from "@/components/shared/scrollTo";
+import Link from "next/link";
+import ParticlesBG from "@/components/particles/particles";
 
 export default function Home() {
-  const handlePreviousProjectsButton = () => {
-    const elem = document.getElementById("ProjectsContainer");
-    elem?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
   return (
     <>
       <div className="z-10 h-screen w-full max-w-7xl px-5 xl:px-0">
+        <ParticlesBG />
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-4xl md:leading-[3rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
@@ -24,12 +21,29 @@ export default function Home() {
           className="mt-6 max-w-xl animate-fade-up text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
-          My burning passion lies in the creation of innovative digital
-          applications, coupled with a deep commitment to cultivating a
-          collaborative work environment. While studying for a “Master of
-          Science in Engineering” degree, Ive had the privilege of immersing
-          myself in the world of programming and product development. Scroll
-          down to find some of my previous work.
+          This portfolio is a showcase of my programming journey, feel free to
+          explore my work whether you're here for inspiration, collaboration, or
+          just to share in the wonder of technology. Thank you for visiting, and
+          feel free to get in touch if you'd like to connect or collaborate. You
+          can find my contact information in my&nbsp;
+          <a
+            className="font-bold text-blue-500 hover:underline"
+            href="/documents/Mahmoud_Sherzad_Resume_IT.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            resumé
+          </a>
+          &nbsp;or connect with me on&nbsp;
+          <a
+            className="font-bold text-blue-500 hover:underline"
+            href="https://www.linkedin.com/in/mahmoud-mirani/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          .
         </p>
         <ScrollTo
           href="#ProjectsContainer"
