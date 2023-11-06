@@ -48,7 +48,7 @@ export default function NavBar() {
             </a>
             <a
               className="opacity-80 transition-opacity duration-200 hover:opacity-50"
-              href="https://drive.google.com/file/d/1lO7_fRVGctOavcbI_3ohLZmqRJN_wnpZ/view?usp=sharing"
+              href="/documents/Mahmoud_Mirani_CV_IT.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

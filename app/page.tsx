@@ -21,15 +21,14 @@ export default function Home() {
           className="mt-6 max-w-xl animate-fade-up text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
-          This portfolio is a showcase of my programming journey, feel free to
+          This portfolio is a showcase of my coding journey, feel free to
           explore my work whether you&apos;re here for inspiration,
-          collaboration, or just to share in the wonder of technology. Thank you
-          for visiting, and feel free to get in touch if you&apos;d like to
-          connect or collaborate. You can find my contact information in
-          my&nbsp;
+          collaboration, or just to follow my journey. Thank you for visiting,
+          and feel free to get in touch if you&apos;d like to connect or
+          collaborate. You can find my contact information in my&nbsp;
           <a
             className="font-bold text-blue-500 hover:underline"
-            href="/documents/Mahmoud_Sherzad_Resume_IT.pdf"
+            href="/documents/Mahmoud_Mirani_CV_IT.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
