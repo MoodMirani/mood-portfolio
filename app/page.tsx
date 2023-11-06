@@ -47,9 +47,9 @@ export default function Home() {
         </p>
         <ScrollTo
           href="#ProjectsContainer"
-          className="mt-10 flex max-w-fit items-center justify-center space-x-2 rounded-lg bg-white px-6 py-2 shadow-lg transition-all duration-75 hover:scale-105"
+          className="z-10 mt-10 flex max-w-fit items-center justify-center space-x-2 rounded-lg bg-white px-6 py-2 shadow-lg transition-all duration-75 hover:scale-105"
         >
-          <p className="font-medium text-gray-600">Previous projects</p>
+          <p className="z-10 font-medium text-gray-600">Previous projects</p>
           <img
             className="opacity-70"
             alt="Arrow down"
