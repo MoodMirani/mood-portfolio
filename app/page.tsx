@@ -25,16 +25,7 @@ export default function Home() {
           explore my work whether you&apos;re here for inspiration,
           collaboration, or just to follow my journey. Thank you for visiting,
           and feel free to get in touch if you&apos;d like to connect or
-          collaborate. You can find my contact information in my&nbsp;
-          <a
-            className="font-bold text-blue-500 hover:underline"
-            href="/documents/Mahmoud_Mirani_CV_IT.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            resumé
-          </a>
-          &nbsp;or connect with me on&nbsp;
+          collaborate. You can find me on&nbsp;
           <a
             className="font-bold text-blue-500 hover:underline"
             href="https://www.linkedin.com/in/mahmoud-mirani/"
@@ -99,7 +90,7 @@ const projects = [
   {
     title: "VisuAssist",
     description:
-      "This project implements computer vision, machine learning, and object recognition to develop a mobile app tailored for individuals with visual impairments. It records live video and provides instant audio descriptions of identified objects, addressing a fundamental need identified in a survey of 5,339 visually impaired individuals. Beyond improving accessibility, this project delves into ethical considerations to ensure responsible use. Be part of my journey to contribute to accessibility and inclusivity.",
+      "This project implements computer vision, machine learning, and object recognition to develop a mobile application tailored for individuals with visual impairments. It records live video and provides instant audio descriptions of identified objects, addressing a fundamental need identified in a survey of 5,339 visually impaired individuals. Beyond improving accessibility, this project delves into ethical considerations to ensure responsible use.",
     tags: [
       "Machine Learning",
       "TensorFlow",

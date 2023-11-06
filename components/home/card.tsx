@@ -10,7 +10,7 @@ export default function Card({
   tags: string[];
 }) {
   return (
-    <div className="z-10 my-10 flex h-auto max-w-lg flex-col overflow-hidden rounded-md bg-white shadow-lg">
+    <div className="z-10 m-7 flex h-auto max-w-lg flex-col overflow-hidden rounded-md bg-white shadow-lg">
       {imagePath && (
         <img className="w-full" src={imagePath} alt="Picture of a project" />
       )}
