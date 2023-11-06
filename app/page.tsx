@@ -14,7 +14,6 @@ export default function Home() {
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           Welcome!
-          <br /> My name is Mahmoud Mirani.
         </h1>
 
         <p
