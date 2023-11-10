@@ -11,13 +11,17 @@ export default function Home() {
         <ParticlesBG />
         <h1
           className="animate-fade-up font-display font-bold md:text-4xl"
-          style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
+          style={{
+            animationDelay: "0.15s",
+            animationFillMode: "forwards",
+            color: "rgb(80, 80, 80)",
+          }}
         >
           Welcome!
         </h1>
 
         <p
-          className="mt-6 max-w-xl animate-fade-up text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
+          className="mt-6 max-w-xl animate-fade-up text-gray-500 [text-wrap:balance] md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
           This portfolio is a showcase of my projects, feel free to explore my
