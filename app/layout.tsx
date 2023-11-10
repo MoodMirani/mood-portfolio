@@ -8,7 +8,7 @@ import Navbar from "@/components/layout/navbar";
 
 export const metadata = {
   title: "Mahmoud Mirani's portfolio",
-  description: "I am developer and project manager.",
+  description: "Welcome to my personal portfolio.",
   themeColor: "#FFF",
 };
 
