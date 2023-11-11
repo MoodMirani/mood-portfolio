@@ -14,11 +14,11 @@ export default function Card({
       {imagePath && (
         <img className="w-full" src={imagePath} alt="Picture of a project" />
       )}
-      <div className="mb-auto px-6 py-4">
+      <div className="mb-auto px-4 py-4">
         <div className="mb-2 text-xl font-bold">{title}</div>
         <p className="text-base text-gray-700">{description}</p>
       </div>
-      <div className="flex flex-wrap px-6 pb-2 pt-4">
+      <div className="flex flex-wrap px-4 pb-2 pt-4">
         {tags.map((tag, index) => (
           <span
             key={index}

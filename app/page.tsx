@@ -7,7 +7,8 @@ import ParticlesBG from "@/components/particles/particles";
 export default function Home() {
   return (
     <>
-      <div className="z-10 h-screen w-full max-w-7xl select-none px-5 xl:px-0">
+      <div className="absolute h-screen w-full bg-gradient-to-br from-indigo-50 to-cyan-100" />
+      <div className="z-10 flex h-screen w-full max-w-7xl select-none flex-col justify-center px-5 xl:ml-28 xl:px-0">
         <ParticlesBG />
         <h1
           className="animate-fade-up font-display font-bold md:text-4xl"
@@ -55,26 +56,27 @@ export default function Home() {
       </div>
       <div
         id="ProjectsContainer"
-        className="flex w-full max-w-screen-xl animate-fade-up flex-wrap justify-evenly"
+        className="mt-10 flex w-full animate-fade-up flex-wrap justify-evenly"
       >
-        {projects.map(({ imagePath, title, description, tags, portrait }) =>
-          portrait ? (
-            <Card
-              key={title}
-              imagePath={imagePath}
-              title={title}
-              description={description}
-              tags={tags}
-            />
-          ) : (
-            <HorizontalCard
-              key={title}
-              imagePath={imagePath}
-              title={title}
-              description={description}
-              tags={tags}
-            />
-          ),
+        {projects.map(
+          ({ imagePath, title, description, tags, imageLandscapeFormat }) =>
+            imageLandscapeFormat ? (
+              <Card
+                key={title}
+                imagePath={imagePath}
+                title={title}
+                description={description}
+                tags={tags}
+              />
+            ) : (
+              <HorizontalCard
+                key={title}
+                imagePath={imagePath}
+                title={title}
+                description={description}
+                tags={tags}
+              />
+            ),
         )}
       </div>
     </>
@@ -88,7 +90,7 @@ const projects = [
       "This is a mobile game created with Unity, it is about staying alive by collecting energy, unlocking layers and playing around with gravity while on your journey to the center of the planet because you want to find water in order to become a tree on the planet. ",
     imagePath: "/images/seed.png",
     tags: ["Unity", "C#", "Github"],
-    portrait: true,
+    imageLandscapeFormat: true,
   },
   {
     title: "VisuAssist",
@@ -102,6 +104,14 @@ const projects = [
       "Github",
       "#Work in progress",
     ],
-    portrait: true,
+    imageLandscapeFormat: true,
+  },
+  {
+    title: "Notifications panel",
+    description:
+      "I developed a notifications panel for a company that has a platform of seven integrated applications for board management. My job was to create a panel that collected notifications from all the applications and displayed them in one place for the users. I collaborated closely with a colleague on this project and after several testing sessions, we integrated this new panel to the platform and enhanced the overall user experience of the platform users.",
+    imagePath: "/images/notifications.png",
+    tags: ["React.js", "TypeScript", "Cypress Automated Testing", "GitLab"],
+    imageLandscapeFormat: false,
   },
 ];

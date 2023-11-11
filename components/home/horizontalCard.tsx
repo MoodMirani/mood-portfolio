@@ -1,26 +1,33 @@
-import { ReactNode } from "react";
-import ReactMarkdown from "react-markdown";
-
-export default function HorizontalCard({
-  imagePath,
-  title,
-  description,
-  tags,
-}: {
+type CardProps = {
   imagePath?: string;
   title?: string;
   description?: string;
   tags: string[];
-}) {
+};
+
+export default function Card({
+  imagePath,
+  title,
+  description,
+  tags,
+}: CardProps) {
   return (
-    <div className="z-10 my-10 flex max-w-sm rounded-md shadow-lg">
-      <img className="" src={imagePath} alt="Picture of a project" />
-      <div className="flex flex-col justify-between bg-white p-4">
-        <div className="mb-8">
-          <div className="mb-2 text-xl font-bold text-gray-900">{title}</div>
+    <div className="z-10 m-7 flex h-auto max-w-lg flex-col overflow-hidden rounded-md bg-white shadow-lg md:flex-row">
+      {imagePath && (
+        <div className="w-full md:w-1/2">
+          <img
+            className="h-auto w-full object-cover"
+            src={imagePath}
+            alt="Picture of a project"
+          />
+        </div>
+      )}
+      <div className="flex w-full flex-col md:w-1/2">
+        <div className="mb-auto px-4 py-4">
+          <div className="mb-2 text-xl font-bold">{title}</div>
           <p className="text-base text-gray-700">{description}</p>
         </div>
-        <div className="flex px-6 pb-2 pt-4">
+        <div className="flex flex-wrap px-4 pb-2 pt-4">
           {tags.map((tag, index) => (
             <span
               key={index}

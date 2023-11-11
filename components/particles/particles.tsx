@@ -495,7 +495,10 @@ export default function ParticlesBG() {
         pauseOnOutsideViewport: true,
         responsive: [],
         smooth: false,
-        style: {},
+        style: {
+          position: "absolute",
+          height: "100vh",
+        },
         themes: [],
         zLayers: 100,
         absorbers: {
