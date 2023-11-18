@@ -31,7 +31,7 @@ export default function Home() {
           touch if you&apos;d like to connect or collaborate. You can find me
           on&nbsp;
           <a
-            className="font-bold text-blue-500 underline-offset-2 hover:underline"
+            className="font-semibold text-blue-500 underline-offset-2 hover:underline"
             href="https://www.linkedin.com/in/mahmoud-mirani/"
             target="_blank"
             rel="noopener noreferrer"
@@ -89,8 +89,24 @@ const projects = [
     description:
       "This is a mobile game created with Unity, it is about staying alive by collecting energy, unlocking layers and playing around with gravity while on your journey to the center of the planet because you want to find water in order to become a tree on the planet. ",
     imagePath: "/images/seed.png",
-    tags: ["Unity", "C#", "Github"],
+    tags: ["Unity", "C#"],
     imageLandscapeFormat: true,
+  },
+  {
+    title: "Popify",
+    description:
+      "A music streaming service and lyrics provider. You can search for tracks, artists and albums that are fetched from the Spotify API. You can also sing along by pushing the lyrics button that fetches lyrics for the choosen track from Musixmatch Lyrics API. At the time this project was created, Spotify did not provide lyrics for their songs.",
+    imagePath: "/images/popify.png",
+    tags: ["React.js", "Redux", "JavaScript", "Firebase"],
+    imageLandscapeFormat: true,
+  },
+  {
+    title: "Notifications panel",
+    description:
+      "I developed a notifications panel for a company that has a platform of seven integrated applications for board management. My job was to create a panel that collected notifications from all the applications and displayed them in one place for the users. I collaborated closely with a colleague on this project and after several testing sessions, we integrated this new panel to the platform and enhanced the overall user experience of the platform users.",
+    imagePath: "/images/notifications.png",
+    tags: ["React.js", "TypeScript", "Cypress Automated Testing"],
+    imageLandscapeFormat: false,
   },
   {
     title: "VisuAssist",
@@ -101,17 +117,8 @@ const projects = [
       "TensorFlow",
       "React Native",
       "TypeScript",
-      "Github",
       "#Work in progress",
     ],
     imageLandscapeFormat: true,
-  },
-  {
-    title: "Notifications panel",
-    description:
-      "I developed a notifications panel for a company that has a platform of seven integrated applications for board management. My job was to create a panel that collected notifications from all the applications and displayed them in one place for the users. I collaborated closely with a colleague on this project and after several testing sessions, we integrated this new panel to the platform and enhanced the overall user experience of the platform users.",
-    imagePath: "/images/notifications.png",
-    tags: ["React.js", "TypeScript", "Cypress Automated Testing", "GitLab"],
-    imageLandscapeFormat: false,
   },
 ];
