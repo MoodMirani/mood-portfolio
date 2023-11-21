@@ -284,8 +284,8 @@ export default function ParticlesBG() {
               width: 1920,
               height: 1080,
             },
-            limit: 0,
-            value: 80,
+            limit: 1000,
+            value: 150,
           },
           opacity: {
             random: {

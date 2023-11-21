@@ -39,6 +39,8 @@ export default function Home() {
             LinkedIn
           </a>
           .
+          <br /> <br />
+          Try clicking on the bubbles.
         </p>
         <ScrollTo
           href="#ProjectsContainer"
@@ -59,7 +61,14 @@ export default function Home() {
         className="mt-10 flex w-full animate-fade-up flex-wrap justify-evenly"
       >
         {projects.map(
-          ({ imagePath, title, description, tags, imageLandscapeFormat }) =>
+          ({
+            imagePath,
+            title,
+            description,
+            tags,
+            imageLandscapeFormat,
+            date,
+          }) =>
             imageLandscapeFormat ? (
               <Card
                 key={title}
@@ -67,6 +76,7 @@ export default function Home() {
                 title={title}
                 description={description}
                 tags={tags}
+                date={date}
               />
             ) : (
               <HorizontalCard
@@ -75,6 +85,7 @@ export default function Home() {
                 title={title}
                 description={description}
                 tags={tags}
+                date={date}
               />
             ),
         )}
@@ -85,12 +96,13 @@ export default function Home() {
 
 const projects = [
   {
-    title: "Seed",
+    title: "Asteroids",
     description:
-      "This is a mobile game created with Unity, it is about staying alive by collecting energy, unlocking layers and playing around with gravity while on your journey to the center of the planet because you want to find water in order to become a tree on the planet. ",
-    imagePath: "/images/seed.png",
-    tags: ["Unity", "C#"],
+      "Asteroid is an old-school arcade game coded with Java. You are in a spaceship avoiding asteroids while shooting them down with your canon. The controller is a handheld physical cardboardmodel of a spaceship with a builtin Arduino along with sensors, buttons and components generating tactile feedback.",
+    imagePath: "/images/asteroids.png",
+    tags: ["Arduino", "C", "C++", "Java", "Processing"],
     imageLandscapeFormat: true,
+    date: "March 2021 – June 2021",
   },
   {
     title: "Popify",
@@ -99,26 +111,32 @@ const projects = [
     imagePath: "/images/popify.png",
     tags: ["React.js", "Redux", "JavaScript", "Firebase"],
     imageLandscapeFormat: true,
+    date: "Okt. 2020 – Dec. 2020",
+  },
+  {
+    title: "Seed",
+    description:
+      "This is a mobile game created with Unity, it is about staying alive by collecting energy, unlocking layers and playing around with gravity while on your journey to the center of the planet because you want to find water in order to become a tree on the planet. ",
+    imagePath: "/images/seed.png",
+    tags: ["Unity", "C#"],
+    imageLandscapeFormat: true,
+    date: "March 2022 – June 2022",
   },
   {
     title: "Notifications panel",
     description:
-      "I developed a notifications panel for a company that has a platform of seven integrated applications for board management. My job was to create a panel that collected notifications from all the applications and displayed them in one place for the users. I collaborated closely with a colleague on this project and after several testing sessions, we integrated this new panel to the platform and enhanced the overall user experience of the platform users.",
+      "Developed a panel for a company that has a platform of seven integrated applications for board management. The panel collects notifications from all the applications and displays them in one place for the users. I collaborated closely with a colleague on this project and after several testing sessions, we integrated this new panel to the platform and enhanced the overall user experience of the platform users.",
     imagePath: "/images/notifications.png",
     tags: ["React.js", "TypeScript", "Cypress Automated Testing"],
     imageLandscapeFormat: false,
+    date: "Jan. 2023 – Sept. 2023",
   },
   {
     title: "VisuAssist",
     description:
       "This project implements computer vision, machine learning, and object recognition to develop a mobile application tailored for individuals with visual impairments. It records live video and provides instant audio descriptions of identified objects, addressing a fundamental need identified in a survey of 5,339 visually impaired individuals. Beyond improving accessibility, this project delves into ethical considerations to ensure responsible use.",
-    tags: [
-      "Machine Learning",
-      "TensorFlow",
-      "React Native",
-      "TypeScript",
-      "#Work in progress",
-    ],
+    tags: ["Machine Learning", "TensorFlow", "React Native", "TypeScript"],
     imageLandscapeFormat: true,
+    date: "Sept. 2023 – Work in progress",
   },
 ];
