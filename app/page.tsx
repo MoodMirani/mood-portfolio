@@ -47,13 +47,9 @@ export default function Home() {
           className="z-10 mt-10 flex max-w-fit items-center justify-center space-x-2 rounded-lg bg-white px-6 py-2 shadow-lg transition-all duration-75 hover:scale-105"
         >
           <p className="z-10 font-medium text-gray-600">Previous projects</p>
-          <img
-            className="opacity-70"
-            alt="Arrow down"
-            src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/arrow-down-icon.png"
-            width="20"
-            height="20"
-          />
+          
+          <svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" width="20" height="20" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 298.04"><path fill-rule="nonzero" d="M12.08 70.78c-16.17-16.24-16.09-42.54.15-58.7 16.25-16.17 42.54-16.09 58.71.15L256 197.76 441.06 12.23c16.17-16.24 42.46-16.32 58.71-.15 16.24 16.16 16.32 42.46.15 58.7L285.27 285.96c-16.24 16.17-42.54 16.09-58.7-.15L12.08 70.78z"/>
+          </svg>
         </ScrollTo>
       </div>
       <div
